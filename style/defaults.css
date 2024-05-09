@@ -1,0 +1,20 @@
+:root {
+  --backgrouond: #faf9f6;
+  --primary: #482e1d;
+  --secondary: #895d2b;
+  --secondary-alt: #a3966a;
+  --hover-background: #a3966ad7;
+  --hover-primary: #514c36;
+  --hover-secondary: #6a6347;
+  --secondary-background: #f0daae;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

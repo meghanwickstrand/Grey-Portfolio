@@ -1,0 +1,87 @@
+/*    -----     ABOUT      -----    */
+.about-section {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/*    -----     TEXT      -----    */
+.about-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+.about-title {
+  width: fit-content;
+  color: var(--primary);
+  font-family: "Cabin", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  border-bottom: solid var(--primary);
+}
+.about-description-wrapper {
+  padding: 20px;
+}
+.about-description {
+  color: var(--secondary);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+/*    -----     PICTURE      -----    */
+.about-portrait {
+  padding: 80px;
+}
+.about-portrait > img {
+  height: 460px;
+  width: 360px;
+  border: 5px solid var(--primary);
+  border-radius: 40px;
+}
+
+/*    -----     REPONSIVENESS      -----    */
+@media (max-width: 992px) {
+  .about-title {
+    font-size: 32px;
+  }
+  .about-description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .about-portrait {
+    padding: 60px;
+  }
+  .about-portrait > img {
+    height: 360px;
+    width: 282px;
+  }
+}
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 26px;
+  }
+  .about-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .about-portrait {
+    padding: 60px;
+  }
+  .about-portrait > img {
+    height: 240px;
+    width: 190px;
+  }
+}
+@media (max-width: 600px) {
+  .about-section {
+    flex-direction: column-reverse;
+  }
+  .about-portrait {
+    padding: 60px 0 0;
+    margin: 0 auto;
+  }
+}

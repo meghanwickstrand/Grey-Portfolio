@@ -1,0 +1,85 @@
+/*    -----     FOOTER      -----    */
+footer {
+  background-color: var(--secondary-background);
+  margin: 20px auto 0;
+}
+.contact-information-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 40px 50px;
+  width: max-content;
+}
+.contact-information-title-wrapper > p {
+  margin: 0;
+  font-family: "Cabin", sans-serif;
+  font-size: 40px;
+  color: var(--primary);
+  font-weight: 500;
+  border-bottom: solid var(--primary);
+}
+.contact-information-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.contact-information-list-item {
+  display: flex;
+  gap: 15px;
+  padding: 0px 50px;
+  align-items: center;
+}
+.contact-information-list-item > p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--secondary);
+  font-size: 16px;
+}
+.contact-information-list-item > img {
+  width: 24px;
+  height: 24px;
+}
+
+/*    -----     RESPONSIVENESS      -----    */
+
+@media (max-width: 992px) {
+  .contact-information-title-wrapper > p {
+    font-size: 36px;
+  }
+  .contact-information-list-item > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768x) {
+  .contact-information-title-wrapper > p {
+    font-size: 28px;
+  }
+  .contact-information-list-item > p {
+    font-size: 12px;
+  }
+  .contact-information-list-item > img {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-information-title-wrapper > p {
+    font-size: 24px;
+  }
+  .contact-information-list-item > p {
+    font-size: 10px;
+  }
+  .contact-information-list-item > img {
+    width: 16px;
+    height: 16px;
+  }
+  .contact-information-list {
+    gap: 16px;
+    margin: 16px;
+  }
+  .contact-information-list-item {
+    padding: 0 10px;
+  }
+}

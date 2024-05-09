@@ -1,0 +1,142 @@
+/*    -----     GALLERY      -----    */
+.gallery {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.gallery-landscape {
+  width: 480px;
+  height: 320px;
+}
+.gallery-portrait {
+  width: 220px;
+  height: 320px;
+}
+.gallery-square {
+  width: 320px;
+  height: 320px;
+}
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/*    -----     HOVER INFORMATION      -----    */
+.image-hover-information {
+  visibility: hidden;
+  background-color: var(--hover-background);
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.image-wrapper:hover .image-hover-information {
+  visibility: visible;
+  padding: 10px 10px;
+  transition: all 0.3s ease-in-out;
+}
+.image-hover-information-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.image-hover-information-name {
+  font-family: "Cabin", sans-serif;
+  font-size: 24px;
+  font-weight: 440;
+  color: var(--hover-primary);
+  margin: 0;
+}
+.image-hover-information-date {
+  font-family: "Cabin", sans-serif;
+  font-size: 12px;
+  color: var(--hover-secondary);
+  margin: 0;
+}
+.image-hover-information-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: var(--hover-primary);
+  margin: 0;
+}
+
+/*    -----     RESPONSIVENESS      -----    */
+@media (max-width: 768px) {
+  .gallery-landscape {
+    width: 240px;
+    height: 160px;
+  }
+  .gallery-portrait {
+    width: 110px;
+    height: 160px;
+  }
+  .gallery-square {
+    width: 160px;
+    height: 160px;
+  }
+  .image-hover-information {
+    gap: 0;
+    padding: 0 5px;
+  }
+  .image-wrapper:hover .image-hover-information {
+    padding: 5px 5px;
+  }
+  .image-hover-information-name {
+    font-size: 12px;
+  }
+  .image-hover-information-date {
+    font-size: 6px;
+  }
+  .image-hover-information-description {
+    font-size: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .gallery {
+    gap: 6px;
+  }
+  .gallery-landscape {
+    width: 120px;
+    height: 80px;
+  }
+  .gallery-portrait {
+    width: 55px;
+    height: 80px;
+  }
+  .gallery-square {
+    width: 80px;
+    height: 80px;
+  }
+  .image-hover-information {
+    gap: 0;
+    padding: 0 5px;
+  }
+  .image-wrapper:hover .image-hover-information {
+    padding: 5px 5px;
+  }
+  .image-hover-information-name {
+    font-size: 6px;
+  }
+  .image-hover-information-date {
+    font-size: 3px;
+  }
+  .image-hover-information-description {
+    font-size: 4px;
+  }
+}
+
+/*    -----     PHOTO SOURCES      -----    */
+#famous-painting {
+  background-image: url("/images/temp-painting.webp");
+  background-size: cover;
+}
+#sentimental-painting {
+  background-image: url("/images/temp-sentimental-painting.jpg");
+  background-size: cover;
+}
+#beautiful-painting {
+  background-image: url("/images/temp-beautiful-painting.jpg");
+  background-size: cover;
+}
